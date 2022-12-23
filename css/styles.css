@@ -1,0 +1,40 @@
+:root {
+  --bg: rgb(29, 29, 29);
+  --offblack: rgb(60, 60, 60);
+  --accent: rgb(1, 193, 180);
+  --accent2: rgb(1, 218, 204);
+}
+
+html {
+  background-color: var(--bg);
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: var(--bg);
+  position: fixed;
+  top: 0px;
+  border: 1px solid white;
+}
+
+/* hero section */
+
+.jumbotron {
+  background-color: var(--bg);
+  color: white;
+  margin-top: 100px;
+}
+
+.heading {
+  font-size: 4rem;
+  border: 1px solid white;
+}
+
+.sub-heading {
+  color: var(--offblack);
+}
+
+.H {
+  color: var(--accent2);
+}
