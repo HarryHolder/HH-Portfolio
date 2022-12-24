@@ -9,26 +9,64 @@ html {
   background-color: var(--bg);
 }
 
+body {
+  background-color: var(--bg);
+  width: 100%;
+}
+
 /* Navbar */
 
 .navbar {
   background-color: var(--bg);
   position: fixed;
   top: 0px;
-  border: 1px solid white;
+  z-index: 100;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+
+.navbar-nav {
+  border: 1px solid var(--accent2);
+  padding-left: 10px;
+  background-color: var(--bg);
 }
 
 /* hero section */
 
 .jumbotron {
-  background-color: var(--bg);
+  background-color: transparent;
   color: white;
   margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.jumbotron .container {
+  width: 60%;
+  margin-left: 50px;
+  background-color: transparent;
+}
+
+.row {
+  background-color: transparent;
+}
+
+.contact-row {
+  height: 100px;
+  background-color: transparent;
+}
+
+.contact-row button {
+  margin: auto;
+  margin-left: 0px;
+}
+
+.contact-row button:hover {
+  background-color: var(--accent2);
+  color: white;
 }
 
 .heading {
   font-size: 4rem;
-  border: 1px solid white;
 }
 
 .sub-heading {
@@ -37,4 +75,114 @@ html {
 
 .H {
   color: var(--accent2);
+}
+
+.jumbotron-fluid,
+.H,
+.sub-heading,
+.heading {
+  background-color: transparent !important;
+  z-index: 1;
+}
+
+/* profile picture */
+
+.profile-picture {
+  height: 600px;
+  width: 400px;
+  position: absolute;
+  right: 0px;
+  top: 70px;
+  background-image: url(../images/profile-picture.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  z-index: 0;
+}
+
+/*  my work grid layout*/
+
+#portfolio {
+  color: var(--accent2);
+  width: 92%;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-left: 54px;
+}
+
+#portfolio-container {
+  width: 92%;
+  margin-bottom: 90px;
+}
+
+.col-sm-4 {
+  padding: 0px;
+  display: flex;
+}
+
+/* card styling */
+
+.card {
+  border: none;
+  width: 97%;
+  height: 97%;
+  margin: auto;
+}
+
+.card-body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(29, 29, 29);
+  text-align: center;
+}
+
+.card-title {
+  color: var(--accent2);
+  padding: 0px;
+  margin: 0px;
+}
+
+.card-text {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  font-size: 0.5rem;
+  margin-bottom: 2px;
+}
+
+.card .btn {
+  align-items: center;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  margin-top: 2px;
+  margin-bottom: 15px;
+}
+
+.card .btn:hover {
+  background-color: var(--accent2);
+  color: white;
+}
+
+/* Skills section */
+
+#skills {
+  color: var(--accent2);
+  width: 92%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  margin-left: 54px;
+}
+
+.skills {
+  width: 92%;
+  margin-left: 55px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  padding: 0;
+}
+
+.icon img {
+  height: 60px;
 }
