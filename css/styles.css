@@ -104,20 +104,16 @@ body {
 
 #portfolio {
   color: var(--accent2);
-  width: 92%;
+  width: 91%;
   margin: auto;
   margin-bottom: 30px;
-  margin-left: 54px;
+  padding: 0px;
 }
 
 #portfolio-container {
-  width: 92%;
-  margin-bottom: 90px;
-}
-
-.col-sm-4 {
+  width: 90.2%;
   padding: 0px;
-  display: flex;
+  margin-bottom: 60px;
 }
 
 /* card styling */
@@ -168,56 +164,76 @@ body {
 #skills {
   color: var(--accent2);
   width: 92%;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 60px;
-  margin-left: 54px;
+  text-align: left;
+  padding: 0px;
+  margin-bottom: 10px;
 }
 
 .skills {
   width: 92%;
-  margin-left: 55px;
+  margin: auto;
+  padding: 0px;
+  margin-bottom: 60px;
+}
+
+.skill-col {
+  padding: 0px;
+  margin: 0px;
+}
+
+.icon {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 100px;
-  padding: 0;
+  justify-content: center;
 }
 
-.icon img {
-  height: 60px;
+#css {
+  justify-content: flex-start;
 }
 
-.thumbnail {
-  top: -50px;
-  left: -35px;
-  display: block;
-  z-index: 999;
-  cursor: pointer;
-  -webkit-transition-property: all;
-  -webkit-transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease;
+#html {
+  justify-content: flex-end;
 }
 
-.thumbnail:hover {
-  transform: scale(3);
+.skills img {
+  height: 55px;
 }
 
 /* about me */
 
-.about-me {
-  width:92%;
-  border: 1px solid white;
+.about-container {
+  width: 92%;
   padding: 0px;
-  color: white;
-  font-size: 0.9rem;
-  line-height: 1rem;
+  margin: 0px;
+  margin: auto;
   margin-bottom: 60px;
 }
 
-#about, #contact {
-  color: var(--accent2);
+.about-me {
+  margin: auto;
   padding: 0px;
-  margin-left: 0px;
-  border: 1px solid white;
 }
 
+.about-col {
+  padding: 0px;
+}
+
+#about-title {
+  color: var(--accent2);
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+#about-text {
+  width: 100%;
+  color: white;
+  padding: 0px;
+}
+/* media Q's */
+
+/* borders */
+
+/* .about-container,
+.skills,
+#portfolio-container {
+  border: 1px solid white;
+} */
